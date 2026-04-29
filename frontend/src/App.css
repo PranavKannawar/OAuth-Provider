@@ -1,0 +1,167 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  border: 1px solid #d6d6d6;
+  border-radius: 10px;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.card h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+.card p {
+  margin: 0 0 20px;
+  color: #555555;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-weight: 600;
+}
+
+.form-group input {
+  padding: 10px 12px;
+  border: 1px solid #c8c8c8;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #1f6feb;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.button-secondary {
+  background: #6b7280;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+}
+
+.actions .button {
+  flex: 1;
+}
+
+.message {
+  margin: 0;
+  font-size: 14px;
+}
+
+.message.error {
+  color: #c62828;
+}
+
+.message.success {
+  color: #1b7f3b;
+}
+
+.link-row {
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.link-row a {
+  color: #1f6feb;
+  text-decoration: none;
+}
+
+.profile-details {
+  margin: 20px 0;
+  padding: 14px;
+  border-radius: 8px;
+  background: #f5f7fb;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 16px 0;
+  color: #888;
+  font-size: 12px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+
+.divider span {
+  margin: 0 10px;
+}
+
+.social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  transition: background 0.2s;
+}
+
+.social-button:hover {
+  background: #f8f9fa;
+}
+
+.social-button.google {
+  border-color: #4285f4;
+  color: #4285f4;
+}
+
+.social-button.github {
+  background: #24292e;
+  color: #fff;
+  border: none;
+}
+
+.social-button.github:hover {
+  background: #2c3238;
+}
