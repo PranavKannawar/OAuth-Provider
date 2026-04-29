@@ -2,7 +2,7 @@ import axios from 'axios'
 import { getToken, removeToken } from '../utils/auth'
 
 const api = axios.create({
-  baseURL: (import.meta.env.VITE_BACKEND_URL || '') + '/api',
+  baseURL: import.meta.env.VITE_BACKEND_URL || '',
 })
 
 api.interceptors.request.use((config) => {
